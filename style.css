@@ -1,0 +1,83 @@
+/* ESTILO GLOBAL - MARCA SERIA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+}
+
+/* LOGO DE NAVEGACIÓN */
+.main-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+    text-align: center;
+}
+
+.nav-logo {
+    height: 60px;
+    filter: brightness(0) invert(1); /* Hace que el logo se vea blanco */
+}
+
+/* SECCIÓN FRONTIER CON IMAGEN DEL VAQUERO */
+.section-frontier {
+    /* IMPORTANTE: Cambie 'vaquero-ranch.jpg' por el nombre de su imagen */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                url('vaquero-ranch.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-overlay {
+    text-align: center;
+    padding: 20px;
+}
+
+.brand-title {
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    letter-spacing: 12px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.red-line-separator {
+    width: 200px;
+    height: 5px;
+    background-color: #CC0000; /* Rojo RLR */
+    margin: 20px auto;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    color: #cccccc;
+    text-transform: uppercase;
+}
+
+/* BOTÓN PROFESIONAL */
+.btn-primary {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.4s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
